@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jarvis</title>
-    <!--<script src="https://cdn.jsdelivr.net/npm/less"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -59,21 +59,99 @@
                 <div class="header__time">
                 </div>
                 <div class="header__user">
-                    <div class="user__avatar">
-
-                    </div>
                     <div class="user__name">
-                        <a class="link" href="/personal/">ganter ganter</a>
+                        <a class="link" href="/personal/">log pass</a>
                     </div>
 
                 </div>
             </div>
         </section>
-        <section class="content">123</section>
+        <section class="content">
+            <div class="content__breadcrumbs">
+                <ul class="breadcrumbs__list" itemprop="http://schema.org/breadcrumb" itemscope=""
+                    itemtype="http://schema.org/BreadcrumbList">
+                    <li id="breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a class="link" href="/" itemprop="item"><span itemprop="name">Кто в хорошем месте</span></a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <p> | </p>
+                        <p class="disabled" itemprop="name">Главное Управление Гантерами</p>
+                        <meta itemprop="position" content="2">
+                    </li>
+                </ul>
+            </div>
+            <div class="content__wrapper">
+                <div class="content__title">
+                    <h1 class="bold">Главное Управление Гантерами</h1>
+                </div>
+                <div class="content__body">
+                    <div class="content__box">
+                        <div class="content__item">
+                            <p class="item__title bold text_18">Управляющие</p>
+                            <div class="item__ganters">
+                                <div class="ganter">
+                                    <div class="ganter__avatar">
+                                        <span class="icon icon-transformers"></span>
+                                        <span class="text">Нет фото</span>
+                                    </div>
+                                    <div class="ganter__name">
 
+                                        <div class="text_18">Управляющий Тестовый</div>
+                                        <span class="text_14 light_gray">test</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="content__item">
+                            <p class="item__title bold">Гантеры</p>
+                            <div class="item__ganters">
+                                <div class="ganter">
+                                    <div class="ganter__avatar">
+                                        <span class="icon icon-transformers"></span>
+                                        <span class="text">Нет фото</span>
+                                    </div>
+                                    <div class="ganter__name">
+
+                                        <div class="text_18">111 Тестовый</div>
+                                        <span class="text_14 light_gray">test</span>
+                                    </div>
+                                </div>
+                                <div class="ganter">
+                                    <div class="ganter__avatar">
+                                        <span class="icon icon-transformers"></span>
+                                        <span class="text">Нет фото</span>
+                                    </div>
+                                    <div class="ganter__name">
+
+                                        <div class="text_18">222 Тестовый</div>
+                                        <span class="text_14 light_gray">test</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn__addGunter" href="#popup_add_gunter" rel="modal:open">Добавить гантера</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <li><a href="#" class="link">Новости</a></li>
+                        <li><a href="#" class="link">Инструкции</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
-
-    <!--<script src="~/lib/jquery/dist/jquery.min.js"></script>-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="../Jarvis/js/site.js" asp-append-version="true"></script>
     <script src="../Jarvis/js/date.js"></script>
 </body>
