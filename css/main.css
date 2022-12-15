@@ -192,6 +192,9 @@ body {
   background-color: #333;
   will-change: transform, width;
 }
+.accordion__btnnotShow::before {
+  display: none;
+}
 .accordion__btn::after {
   position: absolute;
   top: 50%;
@@ -215,26 +218,37 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.accordion__checkList {
-  display: none;
-}
 .accordion__content {
-  display: block;
+  display: none;
   padding: 10px 0 10px 0;
   background-color: transparent;
   will-change: height;
 }
-.link {
-  display: inline-block;
+.accordion__content .link {
   transition: color, 0.2s;
   vertical-align: top;
   text-decoration: none;
   color: #333;
 }
-.link:hover,
-.link.selected {
+.accordion__content .link:hover,
+.accordion__content .link.selected {
   color: #f49b00;
 }
+/*
+.link {
+   display: inline-block;
+   transition: color, .2s;
+   vertical-align: top;
+   text-decoration: none;
+   color: #333;
+
+
+&:hover,
+&.selected {
+   color: #f49b00;
+}
+}
+*/
 .header {
   grid-area: header;
   width: 100%;
@@ -389,4 +403,7 @@ h1 {
   background-color: #f5f5f5;
   align-items: stretch;
   font-size: calc(12px + (17 - 12) * ((100vw - 375px) / (1920 - 375))) !important;
+}
+.show {
+  display: block;
 }

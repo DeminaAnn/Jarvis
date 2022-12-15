@@ -236,6 +236,10 @@ body {
          will-change: transform, width;
       }
 
+      &notShow::before {
+         display: none;
+      }
+
       &::after {
          position: absolute;
          top: 50%;
@@ -263,17 +267,31 @@ body {
    }
 
    &__checkList {
-      display: none;
+      //display: none;
    }
 
    &__content {
-      display: block;
+      display: none;
       padding: 10px 0 10px 0;
       background-color: transparent;
       will-change: height;
+
+      .link {
+         //display: none;
+         transition: color, .2s;
+         vertical-align: top;
+         text-decoration: none;
+         color: #333;
+
+         &:hover,
+         &.selected {
+            color: #f49b00;
+         }
+      }
    }
 }
 
+/*
 .link {
    display: inline-block;
    transition: color, .2s;
@@ -282,12 +300,12 @@ body {
    color: #333;
 
 
-   &:hover,
-   &.selected {
-      color: #f49b00;
-   }
+&:hover,
+&.selected {
+   color: #f49b00;
 }
-
+}
+*/
 
 .header {
    grid-area: header;
@@ -533,4 +551,8 @@ h1 {
    &__item {}
 
    &__list {}
+}
+
+.show {
+   display: block;
 }
