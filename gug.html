@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главное Управление гантерами</title>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div id="main_c" class="main__container">
+        <section id="sidenav" class="sidenav">
+            <div class="sidenav__top">
+                <div class="sidenav__logo">
+                    <img src="/img/logo.png" alt="#" />
+                </div>
+                <div class="sidenav__contact">
+                    <p class="sidenav__title">Хорошее место</p>
+                    <p class="sidenav__text">Тестовое место</p>
+                </div>
+            </div>
+            <div class="sidenav__body">
+                <div class="sidenav__accordion">
+                    <div class="accordion">
+                        <ul class="accordion__list">
+                            <li class="accordion__item">
+                                <div class="accordion__btn accordion__checkList">
+                                    <p>Чек-лист смены</p>
+                                </div>
+                                <div class="accordion__content">
+                                </div>
+                            </li>
+
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p>Хорошее место</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <p><a class="link" href="/gug.html">Главное Управление Гантерами</a></p>
+                                    <p><a class="link" href="#">Кто в хорошем месте</a></p>
+                                    <p><a class="link" href="#">Гости</a></p>
+                                    <p><a class="link" href="/discounts.html">Скидки</a></p>
+                                    <p><a class="link" href="#">График работы</a></p>
+                                    <p><a class="link" href="#">Прошедшие смены</a></p>
+                                    <p><a class="link" href="#">Доход</a></p>
+                                    <p><a class="link" href="#">Тарифы</a></p>
+                                    <p><a class="link" href="#">Чек-листы</a></p>
+                                    <p><a class="link" href="#">Каталог</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="header">
+            <div class="header__top">
+                <div class="header__time">
+                </div>
+                <div class="header__user">
+                    <div class="user__name">
+                        <a class="link" href="/personal/">log pass</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content__breadcrumbs">
+                <ul class="breadcrumbs__list" itemprop="http://schema.org/breadcrumb" itemscope=""
+                    itemtype="http://schema.org/BreadcrumbList">
+                    <li id="breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <a class="link" href="/" itemprop="item"><span itemprop="name">Кто в хорошем месте</span></a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        <p> | </p>
+                        <p class="disabled" itemprop="name">Главное Управление Гантерами</p>
+                        <meta itemprop="position" content="2">
+                    </li>
+                </ul>
+            </div>
+            <div class="content__wrapper">
+                <div class="content__title">
+                    <h1 class="bold">Главное Управление Гантерами</h1>
+                </div>
+                <div class="content__body">
+                    <div class="content__box">
+                        <div class="content__item">
+                            <p class="item__title bold text_18">Управляющие</p>
+                            <div class="item__ganters">
+                                <div class="ganter">
+                                    <div class="ganter__avatar">
+                                        <span class="icon icon-transformers"></span>
+                                        <span class="text">Нет фото</span>
+                                    </div>
+                                    <div class="ganter__name">
+
+                                        <div class="text_18">Управляющий Тестовый</div>
+                                        <span class="text_14 light_gray">test</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="content__item">
+                            <p class="item__title bold">Гантеры</p>
+                            <div class="item__ganters">
+                                <div class="ganter">
+                                    <div class="ganter__avatar">
+                                        <span class="icon icon-transformers"></span>
+                                        <span class="text">Нет фото</span>
+                                    </div>
+                                    <div class="ganter__name">
+
+                                        <div class="text_18">111 Тестовый</div>
+                                        <span class="text_14 light_gray">test</span>
+                                    </div>
+                                </div>
+                                <div class="ganter">
+                                    <div class="ganter__avatar">
+                                        <span class="icon icon-transformers"></span>
+                                        <span class="text">Нет фото</span>
+                                    </div>
+                                    <div class="ganter__name">
+
+                                        <div class="text_18">222 Тестовый</div>
+                                        <span class="text_14 light_gray">test</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn" href="#popup__add_gunter" rel="modal:open">Добавить гантера</a>
+                    <div id="popup__add_gunter" class="popup">
+                        <a href="#main_c" class="popup__area"></a>
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <div class="error"></div>
+                                <h3>Добавить гантера</h3>
+                                <form id="popup__form">
+                                    <div class="form__items">
+                                        <div class="form__item">
+                                            <input type="text" class="form__item_gunter mb_20" name="GUNTER_NAME"
+                                                placeholder="Имя" required>
+                                            <input type="text" class="form__item_gunter mb_20" name="GUNTER_LOGIN"
+                                                placeholder="Логин" required>
+                                        </div>
+                                        <div class="form__item">
+                                            <input type="text" class="form__item_gunter mb_20" name="GUNTER_SURNAME"
+                                                placeholder="Фамилия" required>
+                                            <input type="password" class="form__item_gunter mb_20" name="GUNTER_PASS"
+                                                placeholder="Пароль" required>
+                                        </div>
+                                    </div>
+                                    <select name="GUNTER_GROUP" class="mb_20">
+                                        <option selected value="6">Гантеры</option>
+                                        <option value="5">Управляющие</option>
+                                    </select>
+                                    <div class="mb_20">
+                                        <input id="gunter_photo" type="file" name="photo" />
+                                    </div>
+                                    <button id="btn__add_gunter" class="form__btn btn" type="submit">Сохранить</button>
+                                </form>
+
+                            </div>
+                            <div class="close-modal">
+                                <a href="#main_c"><img src="img/icons/close.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <li><a href="#" class="link">Новости</a></li>
+                        <li><a href="#" class="link">Инструкции</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+    <script src="/js/date.js"></script>
+    <script src="/js/accordion.js"></script>
+</body>
+
+</html>

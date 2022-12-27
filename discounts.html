@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="robots" content="index, follow" />
+   <meta name="description" content="Description" />
+   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Скидки</title>
+   <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+   <div class="main__container">
+      <section id="sidenav" class="sidenav">
+         <div class="sidenav__top">
+            <div class="sidenav__logo">
+               <img src="/img/logo.png" alt="#" />
+            </div>
+            <div class="sidenav__contact">
+               <p class="sidenav__text">Хорошее место</p>
+            </div>
+         </div>
+         <div class="sidenav__body">
+            <div class="sidenav__accordion">
+               <div class="accordion">
+                  <ul class="accordion__list">
+                     <li class="accordion__item">
+                        <div class="accordion__btn accordion__checkList">
+                           <p>Чек-лист смены</p>
+                        </div>
+                        <div class="accordion__content">
+                        </div>
+                     </li>
+
+                     <li class="accordion__item">
+                        <div class="accordion__btn">
+                           <p>Хорошее место</p>
+                        </div>
+                        <div class="accordion__content">
+                           <p><a class="link" href="/gug.html">Главное Управление Гантерами</a></p>
+                           <p><a class="link" href="#">Кто в хорошем месте</a></p>
+                           <p><a class="link" href="#">Гости</a></p>
+                           <p><a class="link" href="/discounts.html">Скидки</a></p>
+                           <p><a class="link" href="#">График работы</a></p>
+                           <p><a class="link" href="#">Прошедшие смены</a></p>
+                           <p><a class="link" href="#">Доход</a></p>
+                           <p><a class="link" href="#">Тарифы</a></p>
+                           <p><a class="link" href="#">Чек-листы</a></p>
+                           <p><a class="link" href="#">Каталог</a></p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+      </section>
+      <section class="header">
+         <div class="header__top">
+            <div class="header__time">
+            </div>
+            <div class="header__user">
+               <div class="user__name">
+                  <a class="link" href="/personal/">log pass</a>
+               </div>
+
+            </div>
+         </div>
+      </section>
+      <section class="content">
+         <div class="content__breadcrumbs">
+            <ul class="breadcrumbs__list" itemprop="http://schema.org/breadcrumb" itemscope=""
+               itemtype="http://schema.org/BreadcrumbList">
+               <li id="breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                  <a class="link" href="/" itemprop="item"><span itemprop="name">Кто в хорошем месте</span></a>
+                  <meta itemprop="position" content="1">
+               </li>
+               <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                  <p> | </p>
+                  <p class="disabled" itemprop="name">Скидки</p>
+                  <meta itemprop="position" content="2">
+               </li>
+            </ul>
+         </div>
+
+         <div class="content__wrapper">
+            <div class="content__title">
+               <h1 class="bold">Скидки</h1>
+            </div>
+            <div class="content__body">
+               <a class="btn" href="#add_discount_guest" rel="modal:open">Добавить скидку для Гостя</a>
+               <div id="add_discount_guest" class="popup">
+                  <a href="#main_c" class="popup__area"></a>
+                  <div class="popup__body">
+                     <div class="popup__content">
+                        <h3>Добавить скидку для Гостя</h3>
+                        <form class="popup__form">
+
+
+                           <input type="hidden" name="group_vk_id" value="210351596">
+                           <div>
+                              <label class="popup__checkbox check">
+                                 <input class="popup__checkbox_hidden" checked="checked" type="checkbox"
+                                    id="search_only">
+                                 <span class="popup__checkbox_indicator"></span>
+                                 <p>Искать только среди своих Гостей</p>
+                              </label>
+                           </div>
+                           <label class="popup__checkbox check check">
+                              <input class="popup__checkbox_hidden" type="checkbox" id="search_vk">
+                              <span class="popup__checkbox_indicator"></span>
+                              <p>Поискать в группе VK</p>
+                           </label>
+                           <div class="discount__input">
+                              <div class="discount__block">
+                                 <div class="discount__block_item" data-id-user-block="1">
+                                    <input type="hidden" class="user_id" name="user_id" value="">
+                                    <input type="text" data-id="1" name="name" class="discount__item mb_20 findGuest"
+                                       placeholder="Введите имя Гостя">
+                                 </div>
+                              </div>
+                           </div>
+                           <input class="discount__item mb_20" type="number" name="percent"
+                              placeholder="Процент скидки">
+                           <input class="discount__item mb_20" type="text" name="discount_active"
+                              placeholder="Скидка доступна до"> <button type="submit"
+                              class="form__btn btn">Добавить</button>
+                        </form>
+                     </div>
+                     <div class="close-modal">
+                        <a href="#main_c"><img src="img/icons/close.png"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+      </section>
+      <section class="footer">
+         <div class="footer__wrapper">
+            <div class="footer__item">
+               <ul class="footer__list">
+                  <li><a href="#" class="link">Новости</a></li>
+                  <li><a href="#" class="link">Инструкции</a></li>
+
+               </ul>
+            </div>
+         </div>
+      </section>
+   </div>
+   <script src="~/lib/jquery/dist/jquery.min.js"></script>
+   <script src="/js/site.js" asp-append-version="true"></script>
+   <script src="/js/date.js"></script>
+   <script src="/js/accordion.js"></script>
+   <script src="/js/calendar.js"></script>
+</body>
+
+</html>

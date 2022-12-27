@@ -65,52 +65,48 @@
                </li>
             </ul>
          </div>
+
          <div class="formbox">
             <div class="content__title">
-               <h3 class="bold">Пожалуйста, авторизуйтесь</h3>
+               <h3 class="bold">Выслать контрольную строку</h3>
+
+               <p class="formbox__content">Выберите, какую информацию использовать для изменения пароля:
+               </p>
+
+               <form name="bform" method="post" target="_top"
+                  action="/gug/?forgot_password=yes&amp;sessid=652839698b81d8e0ad4b0cda891e9f50">
+                  <input type="hidden" name="backurl" value="/gug/?sessid=652839698b81d8e0ad4b0cda891e9f50" />
+                  <input type="hidden" name="AUTH_FORM" value="Y">
+                  <input type="hidden" name="TYPE" value="SEND_PWD">
+
+                  <div class="formbox__container">
+                     <div class="formbox__label">Логин или email</div>
+                     <div class="formbox__input">
+                        <input type="text" name="USER_LOGIN" maxlength="255" value="ganter" />
+                        <input type="hidden" name="USER_EMAIL" />
+                     </div>
+                     <div class="formbox__note">Контрольная строка для смены пароля, а также ваши
+                        регистрационные данные, будут высланы вам на email.</div>
+                  </div>
+
+
+
+                  <div class="formbox__container">
+                     <input type="submit" class="btn btn-primary" name="send_account_info" value="Выслать" />
+                  </div>
+
+                  <div class="formbox__link">
+                     <a href="/authoriz.html"><b>Авторизация</b></a>
+                  </div>
+
+               </form>
+
             </div>
-            <form name="formbox__body" method="post" target="_top" action="/gug/?login=yes&amp;MUL_MODE=">
-               <input type="hidden" name="AUTH_FORM" value="Y" />
-               <input type="hidden" name="TYPE" value="AUTH" />
-               <input type="hidden" name="backurl" value="/gug/?MUL_MODE=" />
-               <div class="formbox__container">
-                  <div class="formbox__label">Логин</div>
-                  <div class="formbox__input">
-                     <input type="text" class="formbox__item mb_20" name="USER_LOGIN" maxlength="255" value="ganter" />
-                  </div>
-               </div>
-               <div class="formbox__container">
-                  <div class="formbox__label">Пароль</div>
-                  <div class="formbox__input">
-                     <input type="password" class="formbox__item mb_20" name="USER_PASSWORD" maxlength="255"
-                        autocomplete="off" />
-                  </div>
-               </div>
-               <div class="formbox__container">
-                  <div class="formbox__checkbox">
-                     <label class="formbox__filter">
-                        <input type="checkbox" id="USER_REMEMBER" name="USER_REMEMBER" value="Y" />
-                        <span class="formbox__filter_text">Запомнить меня на этом компьютере</span>
-                     </label>
-                  </div>
-               </div>
-               <div class="formbox__container">
-                  <input type="submit" class="btn btn-primary" name="Login" value="Войти" />
-               </div>
-            </form>
-            <hr class="formbox__light">
-            <noindex>
-               <div class="formbox__link">
-                  <a href="forgot_pass.html" rel="nofollow"><b>Забыли свой пароль?</b></a>
-               </div>
-            </noindex>
-            <noindex>
-               <div class="formbox__link">
-                  Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.<br />
-                  <a href="/gug/?register=yes&amp;MUL_MODE=" rel="nofollow"><b>Зарегистрироваться</b></a>
-               </div>
-            </noindex>
-         </div>
+
+            <script type="text/javascript">
+               document.bform.onsubmit = function () { document.bform.USER_EMAIL.value = document.bform.USER_LOGIN.value; };
+               document.bform.USER_LOGIN.focus();
+            </script>
 
       </section>
       <section class="footer">

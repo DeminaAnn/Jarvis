@@ -1,0 +1,1 @@
+onclick = "BX.calendar({node: this, field: this, bTime: true});"
