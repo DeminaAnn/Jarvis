@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="robots" content="index, follow" />
+   <meta name="description" content="Description" />
+   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Авторизация</title>
+   <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+   <div class="main__container">
+      <section class="sidenav">
+         <div class="sidenav__top">
+            <div class="sidenav__logo">
+               <img src="/img/logo.png" alt="#" />
+            </div>
+            <div class="sidenav__contact">
+               <p class="sidenav__text">Тестовое место</p>
+            </div>
+         </div>
+         <div class="sidenav__body">
+            <div class="sidenav__accordion">
+               <div class="accordion">
+                  <ul class="accordion__list">
+                     <li class="accordion__item">
+                        <div class="accordion__btn">
+                           <p>Хорошее место</p>
+                        </div>
+                        <div class="accordion__content">
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+      </section>
+      <section class="header">
+         <div class="header__top">
+            <div class="header__time">
+            </div>
+            <div class="header__user">
+               <div class="user__name">
+                  <a class="link" href="/personal/"></a>
+               </div>
+
+            </div>
+         </div>
+      </section>
+      <section class="content">
+         <div class="content__breadcrumbs">
+            <ul class="breadcrumbs__list" itemprop="http://schema.org/breadcrumb" itemscope=""
+               itemtype="http://schema.org/BreadcrumbList">
+               <li id="breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                  <a class="link" href="/" itemprop="item"><span itemprop="name">Кто в хорошем месте</span></a>
+                  <meta itemprop="position" content="1">
+               </li>
+               <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                  <p> | </p>
+                  <p class="disabled" itemprop="name">Главное Управление Гантерами</p>
+                  <meta itemprop="position" content="2">
+               </li>
+            </ul>
+         </div>
+         <div class="authform">
+            <div class="content__title">
+               <h3 class="bold">Пожалуйста, авторизуйтесь</h3>
+            </div>
+            <form name="authform__body" method="post" target="_top" action="/gug/?login=yes&amp;MUL_MODE=">
+               <input type="hidden" name="AUTH_FORM" value="Y" />
+               <input type="hidden" name="TYPE" value="AUTH" />
+               <input type="hidden" name="backurl" value="/gug/?MUL_MODE=" />
+               <div class="authform__container">
+                  <div class="authform__label">Логин</div>
+                  <div class="authform__input">
+                     <input type="text" class="authform__item mb_20" name="USER_LOGIN" maxlength="255" value="ganter" />
+                  </div>
+               </div>
+               <div class="authform__container">
+                  <div class="authform__label">Пароль</div>
+                  <div class="authform__input">
+                     <input type="password" class="authform__item mb_20" name="USER_PASSWORD" maxlength="255"
+                        autocomplete="off" />
+                  </div>
+               </div>
+               <div class="authform__container">
+                  <div class="authform__checkbox">
+                     <label class="authform__filter">
+                        <input type="checkbox" id="USER_REMEMBER" name="USER_REMEMBER" value="Y" />
+                        <span class="authform__filter_text">Запомнить меня на этом компьютере</span>
+                     </label>
+                  </div>
+               </div>
+               <div class="authform__container">
+                  <input type="submit" class="btn btn-primary" name="Login" value="Войти" />
+               </div>
+            </form>
+            <hr class="authform__light">
+            <noindex>
+               <div class="authform__link">
+                  <a href="/gug/?forgot_password=yes&amp;MUL_MODE=" rel="nofollow"><b>Забыли свой
+                        пароль?</b></a>
+               </div>
+            </noindex>
+            <noindex>
+               <div class="authform__link">
+                  Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.<br />
+                  <a href="/gug/?register=yes&amp;MUL_MODE=" rel="nofollow"><b>Зарегистрироваться</b></a>
+               </div>
+            </noindex>
+         </div>
+
+      </section>
+      <section class="footer">
+         <div class="footer__wrapper">
+            <div class="footer__item">
+               <ul class="footer__list">
+                  <li><a href="#" class="link">Новости</a></li>
+                  <li><a href="#" class="link">Инструкции</a></li>
+
+               </ul>
+            </div>
+         </div>
+      </section>
+   </div>
+   <script src="~/lib/jquery/dist/jquery.min.js"></script>
+   <script src="/js/site.js" asp-append-version="true"></script>
+   <script src="/js/date.js"></script>
+   <script src="/js/accordion.js"></script>
+</body>
+
+</html>
